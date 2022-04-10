@@ -6,13 +6,13 @@
 
 Install FFMPEG
 
-MAC 
+MAC\ 
 brew install ffmpeg
 
-Windows
+Windows\
 https://windowsloop.com/install-ffmpeg-windows-10/
 
-Linux
+Linux\
 sudo apt install ffmpeg
 
 
