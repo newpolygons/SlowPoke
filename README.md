@@ -6,7 +6,7 @@
 
 Install FFMPEG
 
-Mac\ 
+Mac\
 brew install ffmpeg
 
 Windows\
