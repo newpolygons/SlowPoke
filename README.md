@@ -19,5 +19,7 @@ sudo apt install ffmpeg
 
 
 Then Install Librarys in requirements.txt 
+$ pip install -r requirements.txt
+
 
 Then run python3 main.py :)
