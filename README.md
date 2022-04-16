@@ -9,13 +9,13 @@ A tool to convert local files, Spotify links, or Youtube links into a slowed and
 
 # Install FFMPEG
 
-MAC \n
+MAC  
 brew install ffmpeg
 
-Windows (Honestly Windows might not even work 😂) \n
+Windows (Honestly Windows might not even work 😂)  
 https://windowsloop.com/install-ffmpeg-windows-10/
 
-Linux \n
+Linux  
 sudo apt install ffmpeg
 
 
