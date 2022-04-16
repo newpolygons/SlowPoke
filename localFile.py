@@ -1,11 +1,8 @@
 from pedalboard import Pedalboard, Reverb
 from pedalboard.io import AudioFile
 from pydub import AudioSegment
-import tkinter
+import tkinter, os, shutil, helper
 from tkinter import filedialog
-import os
-import wave
-import shutil
 
 ''' This fle handles the slowing of local files :)'''
 
@@ -33,8 +30,8 @@ def localFileConvert():
     while (type(factor) != float):
         factor = float(input("Input a number from 1.1 - 1.9 the higher the slower: "))
     
-
-    stretch(currentDirectory + '/files/temperaryFile.wav', factor)
+    os.chdir('files')
+    helper.stretch('temperaryFile.wav', factor)
     
     #Add Reverb to Slowed Track
 
@@ -56,23 +53,7 @@ def localFileConvert():
     if os.path.exists(currentDirectory + '/files/stretched.wav'):
         os.remove(currentDirectory + '/files/stretched.wav')
 
-def stretch( fname,  factor ):
-    ''' Shoutout  Manarabdelaty for stretch imp 
-        https://github.com/Manarabdelaty/Audio-Stretching'''
-    currentDirectory = os.getcwd()
-    infile=wave.open( fname, 'rb')
-    rate= infile.getframerate()
-    channels=infile.getnchannels()
-    swidth=infile.getsampwidth()
-    nframes= infile.getnframes()
-    audio_signal= infile.readframes(nframes)
-    outfile = wave.open(currentDirectory + '/files/stretched.wav', 'wb')
-    outfile.setnchannels(channels)
-    outfile.setsampwidth(swidth)
-    outfile.setframerate(rate/factor)
-    outfile.writeframes(audio_signal)
-    outfile.close()
-    return;
+
     
 
 

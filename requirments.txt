@@ -1,5 +1,0 @@
-pip3 install pedalboard
-pip3 install pydub
-pip3 install soundfile
-pip3 install AudioSegment
-pip3 install spotdl

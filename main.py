@@ -1,4 +1,4 @@
-import localFile, spotify
+import localFile, spotify, youtube
 
 
 menu = ('''
@@ -55,7 +55,7 @@ menu = ('''
 Verison: 1.0.0 Created By NewPolygons (@newpolygons) \n
 1): Local File (mp3, wav)
 2): Spotify Link
-3): Soundcloud Link
+3): Youtube Link
 ''')
 print(menu)
 selection  = input("Select A Number: ")
@@ -72,3 +72,8 @@ if (selection == "1"):
 if (selection == '2'):
   url = input("Please Paste Spotify Link: ")
   spotify.getSpotify(url)
+    
+
+if (selection == '3'):
+  url = input("Please Paste Youtube Link: ")
+  youtube.getYoutube(url)
