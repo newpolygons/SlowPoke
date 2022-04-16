@@ -22,4 +22,4 @@ $ pip install -r requirements.txt
 
 
 # Run
-Run python3 main.py :)
+Run main.py :)
